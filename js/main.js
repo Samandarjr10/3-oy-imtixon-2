@@ -1,3 +1,4 @@
+// -----------------
 var music = [
 ]
 music.unshift("Jazz", "Blues");
@@ -23,5 +24,4 @@ for (var exchange in salaries) {
 
 }
 
-console.log(sum);
-
+console.log("All sum: ", sum);
