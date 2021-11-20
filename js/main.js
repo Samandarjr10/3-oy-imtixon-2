@@ -1,17 +1,27 @@
-var elForm = document.querySelector("#form_submit");
-var elInput = document.querySelector("#input_check");
+var music = [
+]
+music.unshift("Jazz", "Blues");
+music.push("Rock-n-roll");
+music.splice(1, 1, "Classic");
+music.shift();
+music.unshift("Rap", "Reggae");
+
+console.log(music);
 
 
-elForm.addEventListener("submit", function(evt) {
-    evt.preventDefault();
-    var inputDialo = Number(elInput.value.trim());
-    result = []
+// --------------------
 
-    if (inputDialo <= 0){
-        alert("Minimalniy bir kiritishingiz mumkin");
-        return console.log("Minimalniy bir kiritishingiz mumkin");
-    }else if (isNaN(inputDialo)) {
-        alert("Son kiriting");
-        return result;
-    }
-})
+var salaries = {
+    akmal: 1200,
+    karima: 1800,
+    salim: 5200
+}
+
+var sum = 0;
+for (var exchange in salaries) {
+    sum = sum + salaries[exchange];
+
+}
+
+console.log(sum);
+
